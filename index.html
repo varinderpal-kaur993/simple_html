@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <title>HTML SEMANTICS</title>
+    <style>
+    body{
+        font-family: 'Roboto Condensed', sans-serif;
+        line-height: 2em;
+    }
+       nav ul{
+            list-style: none;
+            display: flex;
+        }
+        a{
+            color: #333;
+            text-decoration: none;
+        }
+        /* navbar */
+        .navbar{
+            display: flex;
+            align-items: center;
+            justify-content:space-around;
+            background-color: #333;
+            color: #fff;
+            width: 100%;
+            height: 70px;
+            position: fixed;
+            top: 0;
+            padding: 0 30px;
+        }
+        .navbar a{
+            color: #fff;
+            padding: 10px 20px;
+        }
+        .about h2{
+            padding-top:50px;
+        }
+        .hobby{
+            float: left;
+        }
+        img{
+            margin-left: 100px;
+            width: 70vw;
+        }
+       
+        #main-footer{
+            background: #444;
+            color: #fff;
+            padding: 20px;
+            }
+       .text-center{
+            display: block;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div id="navbar" class="navbar"> 
+        <h1>
+            Varinderpal Kaur
+        </h1>
+        <nav>
+            <ul>
+                <li><a class="current" href="index.html">Index</a></li>
+                <li><a href="notes.html">Notes</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <!-- Main -->
+    <main>
+        <!-- Article -->
+        <article class="about">
+            <h2>
+                About Me
+            </h2>
+            <p>
+                I am <strong>Varinderpal Kaur</strong> and I finished my <em>Bachelor of Computer Applications</em> from
+                India I have a keen interest in <mark>Web Designing</mark>  and my career goal is to become
+                a Web Developer like my sister and my brother-in-law who are working as Web developers
+                here in Ottawa. They are not only a source of inspiration, but they also
+                motivated me to work on small web-based projects to keep updating my GitHub
+                portfolio. Moreover, I try to capture the nature around me using my smartphone camera whenever possible. 
+            </p>              
+            <p>
+                I have recently finished an online course based on <abbr title="HyperText MarkUp Language">HTML</abbr> and 
+                <abbr title="Cascading StyleSheets"> CSS </abbr> where I was
+                exposed to some advanced designing concepts like responsive web design, 
+                flexbox, and grid design along with the basics of web development. Being an 
+                Interactive Media Design student at Algonquin College, I expect to excel in 
+                both web designing and photography in general as these are not complicated as math
+                equations<mark>(a<sup>2</sup>+ b <sup>2</sup>= c<sup>2</sup>)</mark>. I am also a good listener and 
+                an active learner and always try to keep on adding to my knowledge from the web
+                articles as often as I can. 
+            </p>
+            <p>
+                I sometimes spend too much time completing my work, usually sitting in the 
+                same posture without breaks which leads to mental fatigue. Although I am good
+                at sharing my thoughts with my teammates, being an international student,
+                I think that I need to improve my communication skills in English.
+                Furthermore, I would also like to receive any constructive and specific feedback
+                from my team to improve myself.
+            </p>
+        </article>
+        <section>
+            <div class="hobby">
+            <h2>Hobbies</h2>
+            <ul>
+                <li>Listening Music</li>
+                <li>Watching Cartoons</li>
+            </ul>
+            </div>
+            <img class="image" src="images/myimage.jpg" alt="my image">
+        </section>
+    </main>
+    <!-- Aside -->
+    <aside class="quote">
+        <!-- Blockquote -->
+        <blockquote cite="www.questionsanswered.net/article/inspiring-quotes-history">
+            "How wonderful it is that nobody need wait a single moment before starting to improve the world."
+        </blockquote>
+    </aside>
+    <div class="clr"></div>
+    <!-- Footer -->
+    <footer id="main-footer">
+        <p class="text-center">
+            Copyright |&copy; student 2021
+        </p>
+    </footer>
+</body>
+</html>

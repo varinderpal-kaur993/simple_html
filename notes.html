@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <title>HTML SEMANTICS</title>
+    <style>
+        body{
+        font-family: 'Roboto Condensed', sans-serif;
+        line-height: 2em;
+    }
+    .navbar{
+        display: flex;
+        align-items: center;
+        justify-content:space-around;
+        background-color: #333;
+        color: #fff;
+        width: 100%;
+        height: 70px;
+        position: fixed;
+        top: 0;
+        padding: 0 30px;
+    }
+    .navbar a{
+        color: #fff;
+        padding: 10px 20px;
+        text-decoration: none;
+    }
+    nav ul{
+            list-style: none;
+            display: flex;
+        }
+    h2{
+        padding-top: 60px;
+    }
+    .text-primary{
+        color: red;
+    }
+    dt{
+        font-weight: bold;
+    }
+    #main-footer{
+        background: #444;
+        color: #fff;
+        padding: 20px;
+    }
+    .text-center{
+        display: block;
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <div id="navbar" class="navbar"> 
+        <h1>
+            Varinderpal Kaur
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Index</a></li>
+                <li><a class="current" href="notes.html">Notes</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2>
+                HTML SEMANTIC TAGS
+            </h2>
+            <dl>
+                <dt>Section</dt>
+                <dd>-The <span class="text-primary">&lt;section&gt;</span> element defines a section in a document.</dd>
+                <dt>Article</dt>
+                <dd>-The  <span class="text-primary">&lt;article&gt;</span> element specifies independent, self-contained.</dd>
+                <dt>Header</dt>
+                <dd>-The <span class="text-primary">&lt;header&gt;</span> element represents a container for introductory contentor 
+                  a set if navigational links.</dd>
+                <dt>Footer</dt>
+                <dd>-The <span class="text-primary"> &lt;footer&gt;</span> element defines a footer for a document or section.</dd>
+            </dl>
+        </section>
+        <section>
+            <h2>
+                HTML BASIC TAGS
+            </h2>
+            <dl>
+                <dt>Heading</dt>
+                <dd>-The <span class="text-primary">&lt;h1&gt;</span> element defines most important headings.</dd>
+                <dd>-The <span class="text-primary">&lt;h6&gt;</span> element defines least important headings.</dd>
+                <dt>Paragraph</dt>
+                <dd>-The  <span class="text-primary">&lt;p&gt;</span> element defines paragraph.</dd>
+            </dl>
+        </section>
+         <!-- Footer -->
+    <footer id="main-footer">
+        <p class="text-center">
+            Copyright |&copy; student 2021
+        </p>
+    </footer>
+    </main>
+</body>
+</html>
